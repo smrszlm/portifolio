@@ -1,0 +1,131 @@
+/* Gerais */
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#5B4D4C, #8E7978, #D6CECE);
+    display:flex;
+    align-items:center;
+    height:100vh;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-bottom: 1px solid aliceblue ;
+    z-index: 10000;
+}
+
+header .Logo {
+    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+    font-size: larger;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 2rem;
+    transition: transform 0.3s; 
+}
+
+header ul li:hover {
+    transform: scale(1.5);
+} 
+
+header ul li a {
+    text-decoration: none;
+    font-size: larger;
+    padding: 6px 14px;
+    color: aliceblue;
+}
+header ul li a.active {
+    color: aliceblue;
+
+}
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#intro{
+    position: absolute;
+    color: aliceblue;
+    white-space: nowrap;
+    font-size: 3.5vw;
+    font-family: 'Press Start 2P';
+    z-index: 9;
+}
+
+  h1 {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline;
+        font-weight: normal;
+    z-index: 1;
+    color: aliceblue;
+
+  }
+  h1:after{
+   content: '';
+    display: inline-block;
+    background-color: white;
+    margin-left: 2px;
+    height: 25px;
+    width: 4px;
+    animation: cursor 0.4s infinite;
+  }
+  @keyframes cursor {
+    0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+  }
+  
